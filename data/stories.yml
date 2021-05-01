@@ -1,0 +1,79 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: happy path
+  steps:
+  - intent: reserve
+  - action: utter_reserve
+  - intent: seats
+  - action: utter_seats
+
+- story: happy path 1
+  steps:
+  - intent: select_time
+  - action: utter_select_time
+  - intent: time
+  - action: utter_time
+
+- story: happy path 2
+  steps:
+  - intent: booking
+  - action: utter_booking
+  - intent: booking_time
+  - action: utter_booking_time
+
+- story: happy path 3
+  steps:
+  - intent: user
+  - action: utter_user
+  - intent: user_again
+  - action: utter_user_again
+  
+- story: happy path 4
+  steps:
+  - intent: update
+  - action: utter_update
+
+- story: path 5
+  steps: 
+  - intent: faq
+  - action: utter_faq
+  - intent: faq_a
+  - action: utter_faq_a
+  - intent: faq_b
+  - action: utter_faq_b
+  - intent: faq_c
+  - action: utter_faq_c
+
+
+
+ 
+ 

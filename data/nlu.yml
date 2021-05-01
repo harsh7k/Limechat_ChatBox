@@ -1,0 +1,101 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+
+- intent: affirm
+  examples: |
+    - yes
+   
+- intent: deny
+  examples: |
+    - no
+
+- intent: mood_great
+  examples: |
+    - perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+- intent: reserve
+  examples: |
+ 
+    - I would like to reserve a table
+
+- intent: seats
+  examples: |
+   - 1 
+   - 2 
+   - 3 
+   - 4 
+   - 5 
+   - 6
+
+- intent: select_time
+  examples: |
+   -AC
+
+- intent: time
+  examples: |
+   - In half an hour
+
+- intent: booking
+  examples: |
+ 
+    - I want to reserve a table for party for 4
+
+
+- intent: booking_time
+  examples: |
+   - Non-AC
+
+- intent: user
+  examples: |
+   - in an half an hour 
+
+- intent: user_again
+  examples: |
+   - Non-AC
+
+- intent: update
+  examples: |
+   - 7:30 pm
+   - 8 pm
+   - 8:30 pm
+   - 9 pm
+
+- intent: faq
+  examples: |
+   - What are your timings ?
+
+- intent: faq_a
+  examples: |
+   - What day are you open ?
+   - Are you open today ?
+
+- intent: faq_b
+  examples: |
+   - How do i cancel a reservation ?
+   
+
+- intent: faq_c
+  examples: |
+   - What are the specials?
+
+
+ 
+
+
+
+  

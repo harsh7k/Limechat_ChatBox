@@ -1,0 +1,83 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - reserve
+  - seats
+  - ac
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_reserve:
+  - text: "How many seats would you like to reserve."
+
+  utter_seats:
+  - text: "Which section would you like to book."
+    buttons:
+       - title: "AC"  
+         payload: "AC"
+       - title: "Non-AC"
+
+  utter_select_time:
+  - text: "When would you like to book a reservation? (We are only open from 7pm to 10pm"
+
+  utter_time:
+  - text: "You have reserved 2 seats in our AC section for 7:30pm. Thanks!"
+   
+  utter_booking: 
+  - text: "Which section would you like to book"
+    buttons: 
+       - title: "AC"
+       - title: "Non-AC"
+         payload: "Non-AC"
+   
+  utter_booking_time:
+  - text: "When would you like to book a reservation? (We are only open from 7pm to 10pm"
+ 
+  utter_user:
+  - text: " We are not open for that time. We are only open from 7pm to 10pm"
+
+  utter_user_again:
+  - text: "When would you like to book a reservation? (We are only open from 7pm to 10pm"
+  
+  utter_update:
+  - text: "You have reserved 4 seats in our Non-AC section for 7:30 pm. Thanks!" 
+
+  utter_faq:
+  - text: " The resturant open at 7pm closes at 10pm"
+
+  utter_faq_a:
+  - text: " The resturant is open each and every day"
+
+  utter_faq_b:
+  - text: " To cancel a reservation, simply call us at +91 9876543210 and cancel reservation."
+
+  utter_faq_c:
+  - text: " Our cheif is a master of the Italian cuisine. Our core specality is our pasta,  which is renowned  through the city."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
