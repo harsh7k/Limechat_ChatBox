@@ -3,6 +3,7 @@
 
 
 User: I would like to Reserve a table
+
 Bot:  How many Seats you want to reserve
 
 User: 2 seats
